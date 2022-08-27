@@ -4,32 +4,11 @@ const ap = new APlayer({
     lrcType: 3,
     audio: [
         {
-            name: '花の塔',
-            artist: 'さユり',
-            url: 'http://music.163.com/song/media/outer/url?id=1956534872.mp3',
-            cover: 'https://p2.music.126.net/fS_5RbP_4qg-RYreqp2tGg==/109951167558017839.jpg?param=130y130',
-            lrc: ''
-        },
-        {
-            name: '花海',
-            artist: '周杰伦',
-            url: 'music/花海.mp3',
+            name: 'pop!goes my heart',
+            artist: '',
+            url: 'music/pop!goes my heart.mp3',
             cover: '',
             lrc: ''
         },
-        // {
-        //     name: '花の塔',
-        //     artist: 'さユり',
-        //     url: 'http://music.163.com/song/media/outer/url?id=1956534872.mp3',
-        //     cover: 'https://p2.music.126.net/fS_5RbP_4qg-RYreqp2tGg==/109951167558017839.jpg?param=130y130',
-        //     lrc: ''
-        // },
-        // {
-        //     name: '花の塔',
-        //     artist: 'さユり',
-        //     url: 'http://music.163.com/song/media/outer/url?id=1956534872.mp3',
-        //     cover: 'https://p2.music.126.net/fS_5RbP_4qg-RYreqp2tGg==/109951167558017839.jpg?param=130y130',
-        //     lrc: ''
-        // },
     ]
 });
