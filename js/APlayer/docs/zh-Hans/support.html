@@ -189,7 +189,7 @@
 <li>  通过 <a class="link"   target="_blank" rel="noopener" href="https://github.com/sponsors/DIYgod" >GitHub<i class="fas fa-external-link-alt"></i></a> 赞助</li>
 <li>  通过 <a class="link"   target="_blank" rel="noopener" href="https://www.patreon.com/DIYgod" >Patreon<i class="fas fa-external-link-alt"></i></a> 赞助</li>
 <li>  通过 <a class="link"   target="_blank" rel="noopener" href="https://afdian.net/@diygod" >爱发电<i class="fas fa-external-link-alt"></i></a> 赞助</li>
-<li>  给我们发邮件联系赞助事宜: <a class="link"   href="mailto:&#x69;&#64;&#100;&#x69;&#121;&#103;&#x6f;&#100;&#46;&#x6d;&#x65;" >&#x69;&#64;&#100;&#x69;&#121;&#103;&#x6f;&#100;&#46;&#x6d;&#x65;<i class="fas fa-external-link-alt"></i></a></li>
+<li>  给我们发邮件联系赞助事宜: <a class="link"   href="mailto:&#105;&#x40;&#100;&#105;&#x79;&#103;&#x6f;&#x64;&#46;&#x6d;&#x65;" >&#105;&#x40;&#100;&#105;&#x79;&#103;&#x6f;&#x64;&#46;&#x6d;&#x65;<i class="fas fa-external-link-alt"></i></a></li>
 </ul>
 <h2 id="一次性赞助"><a href="#一次性赞助" class="headerlink" title="一次性赞助"></a>一次性赞助</h2><p>我们通过以下方式接受赞助:</p>
 <ul>
@@ -410,6 +410,47 @@
 <div id="aplayer"></div>
 <script src="js/APlayer/dist/APlayer.min.js"></script>
 <script src="js/useaplayer.js"></script>
-
+<!-- Channel Plugin Scripts -->
+<script>
+    (function() {
+      var w = window;
+      if (w.ChannelIO) {
+        return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+      }
+      var ch = function() {
+        ch.c(arguments);
+      };
+      ch.q = [];
+      ch.c = function(args) {
+        ch.q.push(args);
+      };
+      w.ChannelIO = ch;
+      function l() {
+        if (w.ChannelIOInitialized) {
+          return;
+        }
+        w.ChannelIOInitialized = true;
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+        s.charset = 'UTF-8';
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+      }
+      if (document.readyState === 'complete') {
+        l();
+      } else if (window.attachEvent) {
+        window.attachEvent('onload', l);
+      } else {
+        window.addEventListener('DOMContentLoaded', l, false);
+        window.addEventListener('load', l, false);
+      }
+    })();
+    ChannelIO('boot', {
+      "pluginKey": "80763a77-c4b7-4235-87c6-6c39176453ee"
+    });
+</script>
+<!-- End Channel Plugin -->
 </body>
 </html>
